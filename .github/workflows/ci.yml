@@ -41,7 +41,7 @@ jobs:
     - name: Run Great Expectations validation
       run: python3 run_checkpoint.py
 
-docker:
+  docker:
     needs: test
     runs-on: ubuntu-latest
     steps:
